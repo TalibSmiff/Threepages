@@ -3,68 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-up</title>
-  <link rel="stylesheet" href="css/bootstrap.css" />
+  <title>sign-up</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <style>
   header {
     background-color: #ff9900;
-    width: 50px;
   }
-  body {
-    background-color: white;
-  }
-  .text{
-    color:#ff9900;
-    background-color: #072347;
-    border-radius: 10px;
-    width: 500px;
-    height: 20px;
-    padding:20px;
-    margin: 15px;
-    
 
+  body {
+    background-color: #232f3e;
   }
 </style>
-<header>
-
-</header>
 <body>
- <input type="text" placeholder="Email" class="text">
-  <br>
-  <input type="text" placeholder="Username" class="text">
-  <br>
-  <input type="text" placeholder="Name" class="text">
-  <br>
-  <input type="text" placeholder="Password" class="text" style="-webkit-text-security:circle;">
-
-  <div class="form-group">
-    <label for="hearAbout">How did you hear about us?</label>
-    <select class="form-control" id="hearAbout">
-      <option value="socialMedia">Social Media</option>
-      <option value="friend">From a Friend</option>
-      <option value="internetSearch">Internet Search</option>
-      <option value="other">Other</option>
-      <option value="Inthebackofthealley">In the back of an ally</option>
-    </select>
-  </div>
   <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Company, Inc</p>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="products.html" class="nav-link px-2 text-white">Sell Your Stuff</a></li>
+            <li><a href="buyitems.html" class="nav-link px-2 text-white">Buy Items</a></li>
+            <li><a href="faq.html" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="Check-out.html" class="nav-link px-2 text-white">Check-Out</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <a href="login.html">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+          </a>
+            <a href="sign-up.html">
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+              Light
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+              Dark
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+              Auto
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
   
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      </a>
+      
+    <form>
   
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="Check-out.html" class="nav-link px-2 text-body-secondary">Check-Out</a></li>
-        <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary">login</a></li>
-      </ul>
-    </footer>
-  </div>
+      <h1 class="h3 mb-3 fw-normal text-secondary">Sign-Up</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Full Name</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Username</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">create password</label>
+      </div>
+  
+      <div class="form-check text-start my-3">
+       
+       
+      </div>
+      <button class="btn btn-primary w-100 py-2" type="submit">Create account</button>
+      <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+    </form>
+  
+  
+  
+  
+  
+  
+  
+  
   <script src="scripts/bootstrap.bundle.js"></script>
-</body> 
 </body>
 </html>
